@@ -1,0 +1,23 @@
+{
+  "name": "pred-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "regdev": "node register-dev.js",
+    "regprod": "node register-prod.js"
+  },
+  "author": "clake",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@discordjs/builders": "^0.5.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "bluebird": "^3.7.2",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "js-yaml": "^4.1.0",
+    "redis": "^3.0.2"
+  }
+}

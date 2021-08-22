@@ -1,0 +1,56 @@
+---
+# Documentation
+
+Getting Started:
+  id: getting_started
+  emoji: 🧭
+  style: PRIMARY
+  description: |-
+    In a Prediction, you can bet with dedicated game points on 2 options: 🔷 Blue or 🔶 Orange.
+  
+  fields:
+  - title: Claim your points
+    content: |-
+      To start betting, claim 300 game points with `/claim`.
+      If you lost everything, you can still `/claim` again once per day.
+  - title: Check your balance
+    content: Check the game points you have with `/bal`.
+  - title: Start a prediction
+    content: |-
+      Create a new prediction with `/start <title> <🔷 option 1> <🔶 option 2> <time limit>`.
+      Everyone can then just place bets by clicking the 🔷 and 🔶 buttons.
+  - title: Announce results
+    content: |-
+      When the prediction ends, announce results with `/resolve`.
+    
+Advanced:
+  id: advanced
+  emoji: 💡
+  style: SECONDARY
+  description: More commands that can be useful
+  
+  fields:
+  - title: Place a larger bet
+    content: Find the buttons too slow when you are chipping in 1,000 points? Use `/bet <option 🔷 or 🔶> <amount>` to instantly place a large bet (or any amount you want).
+  - title: Extend timer for your prediction
+    content: If time for your prediction is running short, add some extra time with `/extend <extra time>`.
+  - title: Close your prediction early
+    content: If the results are out early and you want to stop receiving bets, `/stop` the prediction.
+  - title: Cancel and refund your prediction
+    content: |-
+      If things don't work out as planned and you can't decide the winner between 🔷 or 🔶, offering everyone a `/refund` might be a good option.
+      Hint: You can also flip a :coin: to decide in `/resolve`.
+
+Administrative:
+  id: administrative
+  emoji: 📐
+  style: SECONDARY
+  description: These commands require you to have admin privilege in the guild.
+  
+  fields:
+  - title: Set display name for game points
+    content: How do you want to call the game points in your guild? Use `/admin coinname <new name>` to set a new name.
+  - title: Cleanup unresolved predictions
+    content: |-
+      See a list of predictions with results unannounced with `/admin stale`.
+      In the prompt, you can remind creators or just cancel the prediction and refund everyone.

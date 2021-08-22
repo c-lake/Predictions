@@ -1,0 +1,11 @@
+{
+    "prefix": "$",
+    "token": "Bot Token Here",
+    "client_id": "Client ID for registering commands to Discord API",
+    "dev_guild_id": "Development guild ID for registering experimental commands with `npm run regdev`",
+    "redis_host": "pred-redis",
+    "redis_port": 6379,
+    "timer_update_interval": 5,
+    "claim_amount": 300,
+    "gain_multipler": 50
+}

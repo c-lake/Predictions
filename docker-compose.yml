@@ -1,0 +1,15 @@
+version: '3'
+services:
+  pred-bot:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - pred-redis
+  pred-redis:
+    image: redis:latest
+    command: redis-server --appendonly yes
+    restart: unless-stopped
+    ports:
+      - '6379:6379'
+    volumes:
+      - ./redis-data:/data
